@@ -1,0 +1,16 @@
+{
+    "name": "hexlet/code",
+    "description": "My first project on Hexlet. Brain Games.",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anatoliy Pavlenko",
+            "email": "fenixdurangoadrenalin@gmail.com"
+        }
+    ],
+    "require": {}
+}
