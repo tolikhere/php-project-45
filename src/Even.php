@@ -9,9 +9,9 @@ use function BrainGames\Greeting\greet;
 function startGame($numOfQuestions, $startRange, $endRange)
 {
     $isWin = true;
-    line('Answer "yes" if the number is even, otherwise answer "no".');
     $name = greet();
 
+    line('Answer "yes" if the number is even, otherwise answer "no".');
     for ($i = 0; $i < $numOfQuestions; $i++) {
         $randomNum = rand($startRange, $endRange);
         $correctAnswer = $randomNum % 2 === 0 ? 'yes' : 'no';
