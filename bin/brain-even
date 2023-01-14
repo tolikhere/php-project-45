@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+
+<?php
+
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+
+$file = file_exists($autoloadPath1) ? $autoloadPath1 : $autoloadPath2;
+
+require_once $file;
+
+use function BrainGames\Even\startGame;
+
+$numOfQuestions = 3;
+$startRange = 1;
+$endRange = 100;
+
+startGame($numOfQuestions, $startRange, $endRange);
