@@ -2,9 +2,6 @@
 
 namespace BrainGames\Games\Calculator;
 
-use function cli\line;
-use function cli\prompt;
-
 // the function generate an expression for the game and returning an array with an expression and a correct answer
 function generateExpression($startRange, $endRange)
 {

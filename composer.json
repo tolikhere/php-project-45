@@ -4,7 +4,8 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "license": "MIT",
     "autoload": {
@@ -12,6 +13,7 @@
             "src/Cli.php",
             "src/Games/Even.php",
             "src/Games/Calculator.php",
+            "src/Games/GCD.php",
             "src/Greeting.php",
             "src/Engine.php"
         ],
