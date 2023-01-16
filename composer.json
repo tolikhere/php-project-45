@@ -3,14 +3,17 @@
     "description": "My first project on Hexlet. Brain Games.",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "license": "MIT",
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/Even.php",
-            "src/Greeting.php"
+            "src/Games/Even.php",
+            "src/Games/Calculator.php",
+            "src/Greeting.php",
+            "src/Engine.php"
         ],
         "psr-4": {
             "Hexlet\\Code\\": "src/"

@@ -13,7 +13,7 @@ use function BrainGames\Engine\launchGame;
 
 $rounds = 3;
 $numRange = [1, 100];
-$question = 'Answer "yes" if the number is even, otherwise answer "no".';
-$generateExpression = '\Even\generateExpression';
+$question = 'What is the result of the expression?';
+$generateExpression = '\Calculator\generateExpression';
 
 launchGame($question, $rounds, $generateExpression, $numRange);

@@ -8,7 +8,7 @@ use function cli\prompt;
 //function greets and return player's name
 function greet()
 {
-    line('Welcome to the Brain Game!');
+    line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?', false, ' ');
     line("Hello, %s!", $name);
     return $name;

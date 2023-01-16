@@ -1,21 +1,21 @@
 <?php
 
-namespace BrainGames\Even;
+namespace BrainGames\Engine;
 
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Greeting\greet;
 
-function startGame($numOfQuestions, $startRange, $endRange)
+function launchGame($question, $rounds, $gameFunc, $numRange)
 {
     $isWin = true;
     $name = greet();
+    $generate = '\BrainGames\Games' . $gameFunc;
 
-    line('Answer "yes" if the number is even, otherwise answer "no".');
-    for ($i = 0; $i < $numOfQuestions; $i++) {
-        $randomNum = rand($startRange, $endRange);
-        $correctAnswer = $randomNum % 2 === 0 ? 'yes' : 'no';
-        line("Question: %d", $randomNum);
+    line($question);
+    for ($i = 0; $i < $rounds; $i++) {
+        [$expression, $correctAnswer] = $generate($numRange[0], $numRange[1]); // returning an array
+        line("Question: %s", $expression);                      // with an expression and a correct answer
         $userAnswer = prompt('Your answer');
 
         if ($userAnswer !== $correctAnswer) {
