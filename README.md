@@ -2,8 +2,11 @@
 [![Actions Status](https://github.com/tolikhere/php-project-45/workflows/hexlet-check/badge.svg)](https://github.com/tolikhere/php-project-45/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/1b02244c0ab3b7322529/maintainability)](https://codeclimate.com/github/tolikhere/php-project-45/maintainability)
 
-### Even Game:
+### brain-even game:
 [![asciicast](https://asciinema.org/a/sqhPty9MsSFLssvFZTPHHUNxN.svg)](https://asciinema.org/a/sqhPty9MsSFLssvFZTPHHUNxN)
 
-### Calculate Game:
+### brain-calc game:
 [![asciicast](https://asciinema.org/a/t7cirmwMmOdrFkbaIdVoZK2xf.svg)](https://asciinema.org/a/t7cirmwMmOdrFkbaIdVoZK2xf)
+
+### brain-gcd game:
+[![asciicast](https://asciinema.org/a/5WpyTl14Ev9LJp8lI6uGSt3cR.svg)](https://asciinema.org/a/5WpyTl14Ev9LJp8lI6uGSt3cR)
