@@ -23,6 +23,8 @@ To play these games you need to have [PHP][php download] and [Composer][composer
 For Windows users I would recommend to use [WSL][wsl installation] and all your programming related stuff do there.
 If you have them, then clone the project or download a zip file and extract on your machine.
 
+All your commands you must type in the root directory of the project. The place where the project has the `Makefile`.
+
 At first, install dependencies. Type this command to do that:
 
 `make install`
