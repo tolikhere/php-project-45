@@ -10,7 +10,7 @@ function generateExpression($startRange, $endRange)
         $expression = "{$a} {$b}";
         $answer = gcd($a, $b);
 
-        return [$expression, (string) $answer];
+        return [$expression, $answer];
 }
 
 function gcd($a, $b)

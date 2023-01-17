@@ -10,7 +10,7 @@ function generateExpression($startRange, $endRange)
     $sign = array_rand(['+' => 'sum', '-' => 'subtract', '*' => 'multiply']);
     $answer = calculate($a, $b, $sign);
     $expression = "{$a} {$sign} {$b}";
-    return [$expression, (string) $answer];
+    return [$expression, $answer];
 }
 
 function calculate($a, $b, $sign)

@@ -18,7 +18,7 @@ function launchGame($question, $rounds, $gameFunc, $numRange)
         line("Question: %s", $expression);                      // with an expression and a correct answer
         $userAnswer = prompt('Your answer');
 
-        if ($userAnswer !== $correctAnswer) {
+        if ($userAnswer !== (string) $correctAnswer) {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $correctAnswer);
             line("Let's try again, %s!", $name);
             $isWin = false;
