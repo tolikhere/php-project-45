@@ -15,7 +15,7 @@ function generateExpression(int $startRange, int $endRange): array
 
 function calculate(int $a, int $b, string $sign): int
 {
-    $result;
+    $result = 0;
     switch ($sign) {
         case '*':
             $result =  $a * $b;
