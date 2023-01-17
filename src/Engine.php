@@ -14,7 +14,7 @@ function launchGame(string $question, int $rounds, string $gameFunc, array $numR
 
     line($question);
     for ($i = 0; $i < $rounds; $i++) {
-        [$expression, $correctAnswer] = call_user_func_array($generate, $numRange); // returning an array
+        [$expression, $correctAnswer] = call_user_func($generate, $numRange[0], $numRange[1]); // returning an array
         line("Question: %s", $expression);                      // with an expression and a correct answer
         $userAnswer = prompt('Your answer');
 

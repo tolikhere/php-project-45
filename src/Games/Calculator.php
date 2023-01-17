@@ -17,10 +17,15 @@ function calculate(int $a, int $b, string $sign): int
 {
     switch ($sign) {
         case '*':
-            return $a * $b;
+            $result =  $a * $b;
+            break;
         case '+':
-            return $a + $b;
+            $result =  $a + $b;
+            break;
         case '-':
-            return $a - $b;
+            $result =  $a - $b;
+            break;
     }
+
+    return $result;
 }

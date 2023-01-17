@@ -15,5 +15,5 @@ function generateExpression(int $startRange, int $endRange): array
 
 function gcd(int $a, int $b): int
 {
-    return ($a % $b) ? gcd($b, $a % $b) : $b;
+    return ($a % $b) !== 0 ? gcd($b, $a % $b) : $b;
 }
