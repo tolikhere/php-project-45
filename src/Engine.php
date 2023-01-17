@@ -12,6 +12,8 @@ function launchGame(string $question, int $rounds, string $gameFunc, array $numR
     $name = greet();
     $generate = '\BrainGames\Games' . $gameFunc;
     line($question);
+    $expression = '';
+    $correctAnswer = '';
     for ($i = 0; $i < $rounds; $i++) {
         if (is_callable($generate)) {
             [$expression, $correctAnswer] = $generate($numRange[0], $numRange[1]); // returning an array with
