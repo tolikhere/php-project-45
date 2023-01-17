@@ -11,10 +11,10 @@ function launchGame(string $question, int $rounds, string $gameFunc, array $numR
     $isWin = true;
     $name = greet();
     $generate = '\BrainGames\Games' . $gameFunc;
-
+    $callback = fn ($a, $b) => $generate($a, $b);
     line($question);
     for ($i = 0; $i < $rounds; $i++) {
-        [$expression, $correctAnswer] = call_user_func($generate, $numRange[0], $numRange[1]); // returning an array
+        [$expression, $correctAnswer] = call_user_func($callback, $numRange[0], $numRange[1]); // returning an array
         line("Question: %s", $expression);                      // with an expression and a correct answer
         $userAnswer = prompt('Your answer');
 
