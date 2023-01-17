@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Greeting\greet;
 
-function launchGame($question, $rounds, $gameFunc, $numRange)
+function launchGame(string $question, int $rounds, string $gameFunc, array $numRange): void
 {
     $isWin = true;
     $name = greet();
@@ -14,7 +14,7 @@ function launchGame($question, $rounds, $gameFunc, $numRange)
 
     line($question);
     for ($i = 0; $i < $rounds; $i++) {
-        [$expression, $correctAnswer] = $generate($numRange[0], $numRange[1]); // returning an array
+        [$expression, $correctAnswer] = call_user_func_array($generate, $numRange); // returning an array
         line("Question: %s", $expression);                      // with an expression and a correct answer
         $userAnswer = prompt('Your answer');
 

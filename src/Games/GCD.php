@@ -3,7 +3,7 @@
 namespace BrainGames\Games\GCD;
 
 // the function generate an expression for the game and returning an array with an expression and a correct answer
-function generateExpression($startRange, $endRange)
+function generateExpression(int $startRange, int $endRange): array
 {
         $a = mt_rand($startRange, $endRange);
         $b = mt_rand($startRange, $endRange);
@@ -13,7 +13,7 @@ function generateExpression($startRange, $endRange)
         return [$expression, $answer];
 }
 
-function gcd($a, $b)
+function gcd(int $a, int $b): int
 {
     return ($a % $b) ? gcd($b, $a % $b) : $b;
 }

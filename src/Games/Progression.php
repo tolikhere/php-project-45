@@ -3,7 +3,7 @@
 namespace BrainGames\Games\Progression;
 
 // the function generate an expression for the game and returning an array with an expression and a correct answer
-function generateExpression($startRange, $endRange)
+function generateExpression(int $startRange, int $endRange): array
 {
     $firstNum = mt_rand($startRange, $endRange);
     $increment = mt_rand(1, 10);
