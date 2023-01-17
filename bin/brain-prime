@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+
+<?php
+
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+
+$file = file_exists($autoloadPath1) ? $autoloadPath1 : $autoloadPath2;
+
+require_once $file;
+
+use function BrainGames\Engine\launchGame;
+
+$rounds = 3;
+$numRange = [1, 100];
+$question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+$generateExpression = '\Prime\generateExpression';
+
+launchGame($question, $rounds, $generateExpression, $numRange);
